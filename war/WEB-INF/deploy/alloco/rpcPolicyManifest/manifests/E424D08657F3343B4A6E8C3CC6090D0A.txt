@@ -1,0 +1,2 @@
+serviceClass: com.project.Alloco.client.service.UserAccessService
+path: A90A33597E47A9DA35F229BBD363F3DB.gwt.rpc
