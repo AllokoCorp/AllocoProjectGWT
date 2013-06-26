@@ -1,0 +1,36 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+   xmlns:gwt='urn:import:com.google.gwt.user.client.ui' 
+   xmlns:res='urn:with:com.project.Alloco.view.login.LoginResources'>
+   <ui:with type="com.project.Alloco.view.login.LoginResources" field="res">
+   </ui:with>
+   <gwt:HTMLPanel>
+      <div align="center">
+         <gwt:VerticalPanel res:styleName="style.background">
+            
+            <gwt:Label text="Name" res:styleName="style.blackText" />
+            <gwt:TextBox ui:field="nameBox" res:styleName="style.box" />
+            
+            <gwt:Label text="Sex" res:styleName="style.blackText" />
+            <gwt:TextBox ui:field="sexBox" res:styleName="style.box" />
+            
+            <gwt:Label text="Birth" res:styleName="style.blackText" />
+            <gwt:TextBox ui:field="birthBox" res:styleName="style.box" />
+            
+            <gwt:Label text="EMail" res:styleName="style.blackText" />
+            <gwt:TextBox ui:field="eMailBox" res:styleName="style.box" />
+            
+            <gwt:Label text="Password" res:styleName="style.blackText" />
+            <gwt:PasswordTextBox ui:field="passwordBox" res:styleName="style.box" />
+            
+            <gwt:Label text="Repeat Password" res:styleName="style.blackText" />
+            <gwt:PasswordTextBox ui:field="passwordVerBox" res:styleName="style.box" />
+            
+            <gwt:HorizontalPanel verticalAlignment="middle">
+               <gwt:Button ui:field="buttonSubmit" text="Submit" res:styleName="style.loginButton" />
+            </gwt:HorizontalPanel>
+            
+         </gwt:VerticalPanel>
+      </div>
+   </gwt:HTMLPanel>
+</ui:UiBinder> 

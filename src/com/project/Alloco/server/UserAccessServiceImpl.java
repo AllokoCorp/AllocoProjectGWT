@@ -31,7 +31,7 @@ public class UserAccessServiceImpl extends RemoteServiceServlet implements
 			System.out.println( "FAIL to log the user" ) ;
 		}
 		
-		this.storeUserFromSession(user);
+		//this.storeUserFromSession(user);
 		return user;
 	}
 
@@ -64,8 +64,19 @@ public class UserAccessServiceImpl extends RemoteServiceServlet implements
 	private void storeUserFromSession(allocoUser user) {
 		System.out.println("[TRACE] UserAccessServiceImpl: storeUserFromSession");
 		HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
+		if (httpServletRequest == null) {
+			System.out.println("[TRACE] UserAccessServiceImpl: storeUserFromSession httpServletRequest == null ");
+		}else{
+			System.out.println("[TRACE] UserAccessServiceImpl: storeUserFromSession httpServletRequest != null ");
+		}
 		HttpSession session = httpServletRequest.getSession(true);
-		session.setAttribute(Enumerations.CookieAttribute.ALLOCOUSER.toString(), user);
+		if (session == null) {
+			System.out.println("[TRACE] UserAccessServiceImpl: storeUserFromSession session == null ");
+		}else{
+			System.out.println("[TRACE] UserAccessServiceImpl: storeUserFromSession session != null ");
+		}
+		//session.setAttribute(Enumerations.CookieAttribute.ALLOCOUSER.toString(), user);
+		session.setAttribute(Enumerations.CookieAttribute.ALLOCOUSER.toString(), "Testcookie");
 	}
 
 	private void deleteUserFromSession() {

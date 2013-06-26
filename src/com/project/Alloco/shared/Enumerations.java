@@ -2,20 +2,20 @@ package com.project.Alloco.shared;
 
 
 public class Enumerations {
-	
-	
-	 // MySQL information
-    public final static String  DB_URL                      = "jdbc:mysql://127.0.0.1:3306/Alloco";
-    public final static String  DB_USERNAME                 = "Boris";
-    public final static String  DB_PASSWORD                 = "boris";
-    public final static String  DB_DRIVER                   = "com.mysql.jdbc.Driver";
-    
-    // MySQL Statements
-    public final static String  SQL_GET_ALL_HOUSE           = "SELECT * FROM alloco.house;";
-    
-    
-    
-	
+
+
+	// MySQL information
+	public final static String  DB_URL                      = "jdbc:mysql://127.0.0.1:3306/Alloco";
+	public final static String  DB_USERNAME                 = "Boris";
+	public final static String  DB_PASSWORD                 = "boris";
+	public final static String  DB_DRIVER                   = "com.mysql.jdbc.Driver";
+
+	// MySQL Statements
+	public final static String  SQL_GET_ALL_HOUSE           = "SELECT * FROM alloco.house;";
+
+
+
+
 	public static enum Language {
 		FRENCH("fr"), ENGLISH("en");
 		private String locale;
@@ -29,7 +29,7 @@ public class Enumerations {
 		}
 	}
 
-	
+
 
 	public static enum CookieAttribute {
 		ALLOCOUSER
@@ -49,12 +49,12 @@ public class Enumerations {
 		ADMIN_EMAIL("SYS_adminEmail"), 
 		// default domain names for virtual machines
 		DEFAULT_DOMAIN("DEFAULT_DOMAIN"),
-		
+
 		// Groups
 		SEARCH_GROUP_BY_GROUP_CN_ASG("G_Payment"), SEARCH_GROUP_BY_GROUP_CN_TPM("G_Plexus"), 
 		// AD info
 		AD_REALM("AD_realm"), AD_KDC("AD_kdc");
-		
+
 		private String keyName;
 
 		private ConfigKey(String keyName) {
@@ -69,8 +69,8 @@ public class Enumerations {
 	public static enum ErrorMessages {
 		ERR_NO_VM_WITH_THIS_NAME(
 				"There are no virtual machine on this server with the name :"), ERR_WAITING_ON_TASK(
-				"Access denied, contact the administrator."), ERR_INVALID_CONFIG_VALUE(
-				"Config value read was invalid.");
+						"Access denied, contact the administrator."), ERR_INVALID_CONFIG_VALUE(
+								"Config value read was invalid.");
 
 		private String message;
 
@@ -83,7 +83,7 @@ public class Enumerations {
 		}
 	}
 
-	
+
 	public static enum UserGroups {
 		NONE, ADMINISTRATEUR, USAGER, BOTH
 	}

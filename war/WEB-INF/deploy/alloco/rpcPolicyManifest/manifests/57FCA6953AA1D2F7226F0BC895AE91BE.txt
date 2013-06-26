@@ -1,2 +1,0 @@
-serviceClass: com.project.Alloco.client.service.AllocoControllerService
-path: 0EB4D86E82210A12214EC60349B7B601.gwt.rpc
