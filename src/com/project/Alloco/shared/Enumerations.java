@@ -6,8 +6,8 @@ public class Enumerations {
 
 	// MySQL information
 	public final static String  DB_URL                      = "jdbc:mysql://127.0.0.1:3306/Alloco";
-	public final static String  DB_USERNAME                 = "Boris";
-	public final static String  DB_PASSWORD                 = "boris";
+	public final static String  DB_USERNAME                 = "alloco";
+	public final static String  DB_PASSWORD                 = "alloco";
 	public final static String  DB_DRIVER                   = "com.mysql.jdbc.Driver";
 
 	// MySQL Statements
